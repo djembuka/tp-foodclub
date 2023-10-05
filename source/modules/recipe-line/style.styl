@@ -1,0 +1,27 @@
+@import '../../styl/component-include.styl'
+
+.b-recipe-line
+
+  &.i-ph-animated
+    display block
+      
+  .col-sm-4
+    
+    @media( max-width 991px )
+      display none
+      
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3)
+        display block
+    
+    @media( max-width 767px )
+      display none
+      
+      &:first-child
+        display block
+        float none
+        
+      &:nth-child(2),
+      &:nth-child(3)
+        display none

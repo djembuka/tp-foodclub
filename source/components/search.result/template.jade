@@ -1,0 +1,101 @@
+﻿// start /components/search.result/
+
+//- push style and script file to the end of the page
+block components-array
+  if componentsArray
+    - componentsArray[ componentsArray.length ] = 'search.result'
+  else
+    - var componentsArray = [ 'search.result' ]
+
+.b-search-result.b-ph-block( data-ajax-method="GET" ) 
+
+  .b-ph
+
+    .b-ph-switcher
+      div
+      div
+      div
+
+    .b-ph-recipes
+
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+        
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+          
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+        
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+          
+      .b-ph__recipe
+        .b-ph__img
+        .b-ph__text
+          div
+          div
+        
+  .b-ph-content
+
+    include ../../modules/switcher/include
+
+    hr
+  
+    .b-search-result__results-tabs
+
+      .b-search-result__results( data-tab="all" )
+      
+        .b-search-result__result-block( data-page="1" )
+                
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+          
+          .b-search-result__button
+            a.btn.btn-default.btn-gray.b-search-result__more( href="/components/search.result/result.html?page=3" ) Показать ещё
+            img( src="/images/preloader.gif" width="281" height="52" alt="" )
+            hr.i-size-XL
+      
+      .b-search-result__results( data-tab="recipes" )
+      
+        .b-search-result__result-block( data-page="1" )
+                
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+          
+          .b-search-result__button
+            a.btn.btn-default.btn-gray.b-search-result__more( href="/components/search.result/result.html?page=3" ) Показать ещё
+            img( src="/images/preloader.gif" width="281" height="52" alt="" )
+            hr.i-size-XL
+      
+      .b-search-result__results( data-tab="foodshots" )
+      
+        .b-search-result__result-block( data-page="1" )
+                
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+            include ../../modules/recipe-thumb/recipe-thumb.jade
+          
+          .b-search-result__button
+            a.btn.btn-default.btn-gray.b-search-result__more( href="/components/search.result/result.html?page=3" ) Показать ещё
+            img( src="/images/preloader.gif" width="281" height="52" alt="" )
+            hr.i-size-XL
+
+// end /components/search.result/

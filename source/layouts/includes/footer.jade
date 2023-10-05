@@ -1,0 +1,88 @@
+﻿footer#bottom.b-footer
+  
+  .visible-xs-block.text-center
+    img( src="/templates/images/twinpx-logo.gif" width="83" height="31" alt="Twin px" )
+    hr.i-size-S
+    | Сайт создан Twin px в 2008 году.
+
+  .container.hidden-xs
+  
+    //-include ../../modules/subscribe/include
+  
+    .row
+    
+      .col-sm-3
+
+        menu
+          each title in [ 'Facebook', 'Instagram', 'Яндекс Дзен', 'Яндекс Коллекции', 'Telegram' ]
+            li
+              a( href="" target="_blank" )=title
+    
+      .col-sm-3
+
+        menu
+          each title in [ 'YouTube', 'LiveJournal', 'Одноклассники', 'ВКонтакте', 'Pinterest' ]
+            li
+              a( href="" target="_blank" )=title
+              
+      .col-sm-3
+        
+        h4 Темы
+
+        menu
+          each title in [ 'Рецепты', 'Фудшоты', 'Журнал' ]
+            li
+              a( href="" )=title
+              
+      .col-sm-3
+        
+        h4 Пользователям
+
+        menu
+          each title in [ 'Соглашение' ]
+            li
+              a( href="" )=title
+
+    hr
+  
+    .row
+    
+      .col-sm-3
+        
+        h4 Актуально
+
+        menu
+          each title in [ 'Летние рецепты', 'Летние супы', 'Летние десерты', 'Летние салаты' ]
+            li
+              a( href="" target="_blank" )=title
+    
+      .col-sm-3
+
+        menu
+          each title in [ 'Рецепты голубцов', 'Диетические блюда', 'Фаршированные яйца', 'Классические салаты' ]
+            li
+              a( href="" target="_blank" )=title
+              
+      .col-sm-3
+
+        menu
+          each title in [ 'Классические супы', 'Крабовый салат', 'Лазанья' ]
+            li
+              a( href="" )=title
+              
+      .col-sm-3
+
+        menu
+          each title in [ 'Рецепты макаронс', 'Рецепты маффинов', 'Необычные рецепты', 'Низкоуглеводные блюда' ]
+            li
+              a( href="" )=title
+
+    #bx-composite-banner( style="display: inline-block;" )
+              
+    //-div
+      a( href="" )
+        span( style="display: inline-block; width: 31px; height: 31px; background-color: #ccc;" )
+      a( href="" )
+        span( style="display: inline-block; width: 88px; height: 31px; background-color: #ccc;" )
+      #bx-composite-banner( style="display: inline-block;" )
+        span( style="display: inline-block; width: 187px; height: 31px; background-color: #ccc;" )

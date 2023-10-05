@@ -1,0 +1,118 @@
+﻿block var-page
+  - var page = recipes
+
+extends ../layouts/inner.jade
+
+block title
+  title Recipes | food
+
+block content
+    
+  .container
+          
+    -var heading = "Рецепты"
+    include ../modules/heading-linethrough/h1
+  
+    include ../modules/content-nav/include.jade
+  
+  #content.all_recipes
+    
+    .container
+    
+      hr
+        
+      include ../components/recipes.filter/template.jade
+      
+      .b-page-cols
+        section.b-page-cols__content
+          
+          include ../components/recipes.filter/results.jade
+          
+        aside.b-page-cols__aside.hidden-sm.hidden-xs
+          
+          include ../modules/aside-banner/include
+          
+          hr.i-size-L
+          
+          include ../components/aside.rom/template
+          
+          //-hr.i-size-L
+          
+          //-include ../modules/aside-banner/float
+      
+      hr.i-size-L
+      
+      -var heading = "Подборки"
+      include ../modules/heading-linethrough/include
+
+      hr
+
+      .row
+        .col-sm-4.text-center
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Постные блюда
+              
+        hr.visible-xs-block
+          
+        .col-sm-4.text-center.hidden-xs
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Постные блюда
+              
+        hr.visible-xs-block
+          
+        .col-sm-4.text-center.hidden-xs
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Готовимся к пляжному сезону!
+
+      hr
+
+      .row
+        .col-sm-4.text-center
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Постные блюда
+              
+        hr.visible-xs-block
+          
+        .col-sm-4.text-center.hidden-xs
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Постные блюда
+              
+        hr.visible-xs-block
+          
+        .col-sm-4.text-center.hidden-xs
+          a( href="/journal/article/" )
+            img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+          hr.i-size-S
+          .row
+            .col-sm-10.col-sm-offset-1
+              h2
+                a( href="/journal/article/" ) Готовимся к пляжному сезону!
+      
+      hr.i-size-L
+            
+            

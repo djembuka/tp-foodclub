@@ -1,0 +1,128 @@
+﻿-var heading = "Свежая публикация"
+include ../../modules/heading-linethrough/include
+
+hr
+
+.row
+  .col-sm-6
+    a( href="/journal/article/" )
+      img.img-responsive.center-block( src="/upload/journal/feed.jpg" alt="Салаты и закуски Новогоднего стола" )
+  hr.i-size-S.visible-xs-block
+  .col-sm-4.col-sm-offset-1.text-center
+    include ../../modules/author/include
+    a.b-feed-heading( href="" )
+      b foodclub
+    h2
+      a( href="" ) Салаты и закуски для новогоднего стола! Дайжест свежих публикаций из ЖЖ
+    p Продолжаем подготовку к праздничному ужину! В подборке вы найдете 10 идей для вдохновения, которые помогут разнообразить привычное меню, и подготовиться к торжественной трапезе. 
+    p Хотите пор...
+    
+hr.i-size-XL
+    
+-var heading = "Актуально"
+include ../../modules/heading-linethrough/include
+
+hr
+
+.row
+  .col-sm-4.text-center
+    a( href="/journal/article/" )
+      img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+    hr.i-size-S
+    .row
+      .col-sm-10.col-sm-offset-1
+        a.b-feed-heading( href="/journal/thematic/" ) foodclub
+        h2
+          a( href="/journal/article/" ) Что приготовить на 8 марта? Дайджест публикаций из блогов
+        p Несмотря на то что до праздника еще далеко, уже сейчас можно начинать планировать новогоднее меню. Десерты – это та часть праздничного стола... 
+    
+  .col-sm-4.text-center.hidden-xs
+    a( href="/journal/article/" )
+      img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+    hr.i-size-S
+    .row
+      .col-sm-10.col-sm-offset-1
+        a.b-feed-heading( href="/journal/thematic/" ) foodclub
+        h2
+          a( href="/journal/article/" ) Что приготовить на 8 марта? Дайджест публикаций из блогов
+        p Несмотря на то что до праздника еще далеко, уже сейчас можно начинать планировать новогоднее меню. Десерты – это та часть праздничного стола... 
+    
+  .col-sm-4.text-center.hidden-xs
+    a( href="/journal/article/" )
+      img.img-responsive.center-block( src="/upload/journal/feed2.jpg" alt="Салаты и закуски Новогоднего стола" )
+    hr.i-size-S
+    .row
+      .col-sm-10.col-sm-offset-1
+        a.b-feed-heading( href="/journal/thematic/" ) foodclub
+        h2
+          a( href="/journal/article/" ) Что приготовить на 8 марта? Дайджест публикаций из блогов
+        p Несмотря на то что до праздника еще далеко, уже сейчас можно начинать планировать новогоднее меню. Десерты – это та часть праздничного стола... 
+      
+hr
+      
+.row
+  .col-sm-4.text-center
+  
+    -var heading = "Рецепт месяца"
+    include ../../modules/heading-linethrough/include
+    
+    hr
+    
+    include ../../modules/recipe-thumb/recipe-of-month.jade
+    
+  hr.visible-xs-block
+  
+  .col-sm-4.text-center
+  
+    -var heading = "Ингредиент"
+    include ../../modules/heading-linethrough/include
+    
+    hr
+    
+    .b-recipe-thumb
+    
+      a.b-recipe-thumb__photo( href="" style="background-image: url('/upload/recipe-preview/blocks/5.jpg');" )
+        img( src="data:image/gif;base64,R0lGODlhBgAEAIAAAP///wAAACH5BAEAAAAALAAAAAAGAAQAAAIEhI+pVwA7" )
+      
+      hr
+        
+      .text-center
+        h2
+          a( href="" ) Мука пшеничная
+        p Переоценить значение пшеничной муки в питании человека, наверное, невозможно.
+    
+  hr.visible-xs-block
+    
+  .col-sm-4.text-center
+  
+    -var heading = "Спец. проект"
+    include ../../modules/heading-linethrough/include
+    
+    hr
+    
+    .b-recipe-thumb
+    
+      a.b-recipe-thumb__photo( href="" style="background-image: url('/upload/recipe-preview/blocks/5.jpg');" )
+        img( src="data:image/gif;base64,R0lGODlhBgAEAIAAAP///wAAACH5BAEAAAAALAAAAAAGAAQAAAIEhI+pVwA7" )
+      
+      hr
+        
+      .text-center
+        h2
+          a( href="" ) Новогодние рецепты
+        p Как ни крути, для новогоднего стола в России очень характерны сытные многокомпонентные салаты, мясные закуски и соленья.
+        
+hr
+
+include ../../components/lavka/template
+    
+hr.i-size-XL
+
+-var heading = "Наши авторы"
+include ../../modules/heading-linethrough/include
+
+hr
+
+include ../../modules/author-card/include
+    
+      

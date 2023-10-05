@@ -1,0 +1,22 @@
+﻿// start /components/recipe-search/
+
+//- push style and script file to the end of the page
+if componentsArray
+  - componentsArray[ componentsArray.length ] = 'recipe-search'
+else
+  - var componentsArray = [ 'recipe-search' ]
+
+if page == 'search'
+  - var wrapper = ' i-mobile-search'
+else
+  - var wrapper = ''
+  
+#recipeSearch( class="b-recipe-search#{wrapper}" )
+  .b-recipe-search-field
+    .container
+      .b-recipe-search-field__icon
+      .b-recipe-search-field__clear( title="Очистить поле" )
+      .b-recipe-search-field__input
+        input#title-search-input( type="search" name="recipe-search" value="" )
+  
+// end /components/recipe-search/

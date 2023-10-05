@@ -1,0 +1,18 @@
+﻿block var-page
+  - var page = recipe
+
+extends ../../layouts/main.jade
+
+block title
+  title Recipe | food
+
+block content
+
+  hr
+    
+  .container
+  
+    //- include ../../components/recipe.menu/top.jade
+    include ../../components/recipe/template.jade
+    //- include ../../components/recipe.menu/bottom.jade
+    include ../../components/recipe.comments/template.jade

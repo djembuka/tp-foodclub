@@ -1,0 +1,352 @@
+button
+  
+  & focus
+    outline none
+    
+fieldset
+  border none
+
+legend
+  display none !important
+
+input.text,
+.b-input-text
+  background-color #fff
+  border 1px solid #c3c3c3
+  font-size $big-size
+  font-family $arial
+  padding 8px 10px 8px 10px
+  height 31px
+  color $middle-grey
+  border-radius( 3px )
+  box-shadow( 2px 2px 7px #cacaca inset )
+  
+  &:focus
+    outline none
+  
+/*textarea,
+.b-textarea
+  color $middle-grey
+  border 1px solid #b9b9b9
+  background #fff
+  width 578px
+  height 105px
+  padding 7px 10px
+  font-size $big-size
+  font-family $arial
+  border-radius( 3px )
+  box-shadow( 2px 2px 7px #cacaca inset )
+  
+  &:focus
+    outline none*/
+
+textarea
+  resize none
+    
+textarea.form-control
+  height 70px !important
+    
+select
+  background $s-light-grey
+  border 1px solid $lighter-grey
+  background $s-light-grey
+  font-size $big-size
+  color $middle-grey
+  font-family $arial
+  
+.b-linking-text
+  color $grey
+  font-size 10pt
+  font-family $georgia
+  font-style italic
+  display block
+  text-shadow 0 1px 0 #fff
+
+.b-label
+  font-size $x-small
+  font-family $sans
+  display block
+  margin-left 10px
+
+  .i-attention &
+    color #ff0000
+
+.b-form-attention
+  visibility hidden
+
+  .i-attention &
+    visibility visible
+
+.form_field
+  margin-bottom 15px
+  
+  h5
+    margin 0 0 4px 0
+      
+      span
+        font-size $small
+        font-style italic
+        visibility hidden
+        margin-left 5px
+    
+.b-form-label
+  margin 0 0 4px 0
+  
+.attention
+
+  h5
+    color $attention-color
+  
+  span
+    visibility visible
+    color $attention-color
+    
+  .form_field &
+    color $attention-color
+  
+    span
+      visibility visible
+      color $attention-color
+  
+.form_field
+
+  h4
+    color $grey
+    font-style italic
+    font-size $big-size
+    font-family $georgia
+    margin-bottom 7px
+    
+    span
+      font-style italic
+      font-size 10pt
+      visibility hidden
+      
+.attention h4
+
+  color $attention-color
+  
+  span
+    visibility visible
+    color $attention-color
+
+.capture
+
+  .form_field
+    float left
+    padding-right 10px
+    
+  .code
+    margin-top 17px
+    float left
+    padding-right 10px
+
+.two_buttons
+  height 49px
+
+  .button
+    float left
+    width 506px
+    
+  .first
+    margin-right 14px
+    width 177px
+
+.form_checkbox
+  float left
+  rel()
+  padding 0 60px 0 0
+  margin-bottom 15px
+  
+  .checkbox
+    abs( -1px, 0 )
+    
+    table td
+      width 20px
+      height 20px
+      vertical-align middle
+      text-align center
+      
+  label
+    white-space nowrap
+    margin-left 20px
+
+  &_pic img
+    margin-right 5px
+
+.imbot
+  display none
+  
+
+.b-form-field__placeholder
+  rel()
+
+  &__text
+    box-sizing( content-box )
+    color #8C8C8C
+    cursor text
+    display none
+    font-size 9pt
+    padding-left 8px
+    padding-top 5px
+    abs( 0, 0 )
+
+    .i-placeholder &
+        display block
+
+.b-form-note
+  font-size 8pt
+  font-style italic
+  color #999
+  margin 28px 0 0 20px
+  text-indent -15px
+  line-height 1.4
+  
+//file upload
+.b-file-upload__type_avatar
+  width 100px
+  height 100px
+  position relative
+
+.b-file-upload__type_avatar__avatar
+  width 100px
+  height 100px
+
+.b-file-upload__button
+  overflow hidden
+  background url(/images/buttons.png) no-repeat 0 -2660px
+  width 65px
+  height 50px
+  display inline-block
+  position relative
+
+.b-file-upload__button:i-hover
+  background-position 0 -2711px
+
+.b-file-upload__button:i-active
+  background-position 0 -2762px
+
+.b-file-upload__file
+  cursor pointer
+  direction ltr
+  font-size 23px
+  margin 0
+  opacity 0
+  position absolute
+  right 0
+  top 0
+  transform translate(-300px, 0px) scale(4)
+  height 50px
+
+
+.b-file-upload__type_avatar .b-file-upload__button
+  position absolute
+  top 25px
+  left 19px
+  visibility hidden
+
+.b-file-upload__type_avatar.i-hover .b-file-upload__button
+  visibility visible
+
+.b-file-upload__type_avatar.i-progress .b-file-upload__button,
+.b-file-upload__type_avatar.i-progress .b-file-upload__type_avatar__avatar
+  visibility hidden
+
+.b-file-upload__type_avatar.i-progress .b-file-upload__files-container
+  background url(/images/circular-preloader.gif) no-repeat center center
+  width 98px
+  height 98px
+  border 1px solid #d1d1d1
+  
+@import 'input-field.styl'
+        
+textarea.materialize-textarea
+  line-height normal
+  overflow-y hidden
+  padding .8rem 0 .8rem 0
+  resize none
+  min-height 3rem
+  -webkit-box-sizing border-box
+  box-sizing border-box
+  
+.hiddendiv
+  visibility hidden
+  white-space pre-wrap
+  word-wrap break-word
+  overflow-wrap break-word
+  padding-top 1.2rem
+  position absolute
+  top 0
+  z-index -1
+      
+label.input-checkbox
+
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked
+    position absolute
+    opacity 0
+    pointer-events none
+    
+  [type="checkbox"]+span:not(.lever)
+    position relative
+    padding-left 35px
+    cursor pointer
+    display inline-block
+    height 25px
+    line-height 25px
+    font-size 9pt
+    font-weight normal
+    user-select none
+    
+  [type="checkbox"]+span:not(.lever):before,
+  [type="checkbox"]:not(.filled-in)+span:not(.lever):after
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 18px
+    height 18px
+    z-index 0
+    border 2px solid #5a5a5a
+    border-radius 1px
+    margin-top 3px
+    -webkit-transition .2s
+    transition .2s
+    
+  [type="checkbox"]:not(.filled-in)+span:not(.lever):after
+    border 0
+    transform( scale(0))
+    
+  [type="checkbox"]+span:not(.lever):before,
+  [type="checkbox"]:not(.filled-in)+span:not(.lever):after
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 17px
+    height 17px
+    z-index 0
+    border 2px solid #5a5a5a
+    border-radius 1px
+    margin-top 3px
+    transition( .2s )
+
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked
+    position absolute
+    opacity 0
+    pointer-events none
+    
+  [type="checkbox"]:checked+span:not(.lever):before
+    top -4px
+    left 0
+    width 12px
+    height 22px
+    border-top 2px solid transparent
+    border-left 2px solid transparent
+    border-right 2px solid #26a69a
+    border-bottom 2px solid #26a69a
+    transform( rotate(40deg))
+    -webkit-backface-visibility hidden
+    backface-visibility hidden
+    transform-origin( 100% 100% )

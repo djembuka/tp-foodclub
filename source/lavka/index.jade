@@ -1,0 +1,37 @@
+﻿block var-page
+  - var page = lavka
+
+extends ../layouts/inner.jade
+
+block title
+  title Лавка | food
+
+block section
+
+  h1 Лавка
+
+  p Представляем вам наш новый проект «Лавка». В этом разделе, как на витрине, вы можете найти полезные для вас товары, которые не всегда можно приобрести в соседнем магазине. Здесь будут размещаться не только продукты, но и кухонные аксессуары, посуда и приспособления для приготовления пищи.
+  p Выбрав необходимый товар в лавке, вы можете перейти в интернет-магазин, где он продается, и оформить заказ.
+  
+  hr
+
+  h2 Интернет-магазинам
+  p У вас есть собственный интернет-магазин и товары, которые могут пригодиться нашим пользователям?
+    a( href="mailto:" ) Пишите нам!
+  
+  hr
+  
+  include ../components/lavka/template
+
+//-
+  block aside
+
+    include ../modules/aside-banner/include
+    
+    hr.i-size-L
+    
+    include ../components/aside.rom/template
+    
+    hr.i-size-L
+    
+    include ../modules/aside-banner/float

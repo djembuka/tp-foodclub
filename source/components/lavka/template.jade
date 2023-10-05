@@ -1,0 +1,69 @@
+﻿// start /components/lavka/
+
+//- push style and script file to the end of the page
+block components-array
+  if componentsArray
+    - componentsArray[ componentsArray.length ] = 'lavka'
+  else
+    - var componentsArray = [ 'lavka' ]
+
+.b-lavka.b-ph-block
+  
+  hr
+  
+  -var heading = "Лавка"
+  include ../../modules/heading-linethrough/include
+
+  .row
+    - var i = 0
+    while i < 2
+      - i++
+      
+      .col-sm-3.text-center
+        .b-lavka__logo
+          a(href='', target='_blank', rel='nofollow')
+            img(src='/upload/store-block/logo.gif' alt='' loading="lazy" )
+        hr
+        .b-lavka__photo
+          a(href='', target='_blank', rel='nofollow')
+            img(src='/upload/store-block/photo.jpg', width='90', height='130', alt='Гриль Bar-B-Kettle' loading="lazy" )
+        hr
+        .b-lavka__title
+          a(href='', target='_blank', rel='nofollow') Гриль Bar-B-Kettle
+          
+        .b-lavka__price.b-price
+          span.b-price__num ~5 346
+          span.b-price__unit руб.
+        
+        .b-lavka__button
+          a.btn.btn-default(href='', target='_blank', rel='nofollow') Купить
+    
+      .col-sm-12.visible-xs-block
+        hr.i-line.i-size-XL
+      
+      .col-sm-3.text-center
+        .b-lavka__logo
+          a(href='', target='_blank', rel='nofollow')
+            img(src='/upload/store-block/logo2.jpg' alt='' loading="lazy" )
+        hr
+        .b-lavka__photo
+          a(href='', target='_blank', rel='nofollow')
+            img(src='/upload/store-block/photo2.jpg', width='130', height='130', alt='Кленовый сироп' loading="lazy" )
+        hr
+        .b-lavka__title
+          a(href='', target='_blank', rel='nofollow') Кленовый сироп
+          
+        .b-lavka__price.b-price
+          span.b-price__num
+            span.b-price__num__int 5 346
+            span.b-price__num__fract .60
+          span.b-price__unit руб.
+        
+        .b-lavka__button
+          a.btn.btn-default(href='', target='_blank', rel='nofollow') Купить
+    
+      - if( i == 1 )
+        .col-sm-12.visible-xs-block
+          hr.i-line.i-size-XL
+
+// end /components/lavka/

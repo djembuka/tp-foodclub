@@ -1,0 +1,91 @@
+*
+  box-sizing border-box
+
+body
+  margin 0
+  overflow-y scroll
+  
+/*From Bootstrap*/
+
+.visible-xs-block
+  display none!important
+    
+@media (max-width: 767px)
+
+  .hidden-xs
+    display none!important
+    
+  .visible-xs-block
+    display block!important
+
+.container
+  padding-right 15px
+  padding-left 15px
+  margin-right auto
+  margin-left auto
+  box-sizing border-box
+    
+  @media (min-width 768px)
+    width 750px
+
+  @media (min-width 992px)
+    width 970px
+  
+  @media (min-width 1200px)
+    width 1170px
+    
+  &:after
+    clear both
+    display table
+    content " "
+  
+h1
+  height 32px
+  //anti bootstrap
+  font-size 0 !important
+  color #fff !important
+  position relative
+  margin 0 0 29px 0 !important
+  transition( color .5s ease )
+  
+  &:after
+    display block
+    content ''
+    height 32px
+    width 40%
+    background-color $placeholder-color
+    position absolute
+    top 0
+    left 30%
+    transition( opacity .5s ease )
+    z-index 1
+    
+    @media( max-width 767px )
+      width 90%
+      left 5%
+  
+hr
+  border-color transparent !important
+  border 0
+  border-top 1px solid transparent
+  box-sizing content-box
+  height 0
+  //anti bootstrap
+  margin-top 20px !important
+  margin-bottom 20px !important
+  
+  @media( max-width 575px )
+    //anti bootstrap
+    margin 10px 0 9px !important
+  
+  &.i-size-L
+    margin 20px 0 19px !important
+    
+  &.i-size-M
+    margin 10px 0 9px !important
+  
+.b-deferred-content
+  display none
+  
+[ id*="__deferred"] .b-deferred-content
+  display block

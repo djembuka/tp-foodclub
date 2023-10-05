@@ -1,0 +1,88 @@
+// start /components/trends/
+
+//- push style and script file to the end of the page
+block components-array
+  if componentsArray
+    - componentsArray[ componentsArray.length ] = 'trends'
+  else
+    - var componentsArray = [ 'trends' ]
+
+.b-trends.b-ph-block
+
+  link( rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" )
+  script( src="https://unpkg.com/swiper/swiper-bundle.min.js" )
+
+  .b-ph
+    .b-ph__wrapper
+      div
+      div
+      div
+      div
+
+  .b-ph-content
+  
+    h2 Тренды
+
+    hr.i-size-M
+
+    .b-trends-wrapper.start
+
+      .b-trends-button-prev.disabled
+        svg(xmlns='http://www.w3.org/2000/svg' width='6.243' height='10.485' viewBox='0 0 6.243 10.485')
+          g(transform='translate(-5.243 5.243) rotate(-45)')
+            path.b-trends-button-path( d='M5.949,5.95,1.706,10.192A1,1,0,0,1,.292,8.778L3.828,5.243.292,1.707A1,1,0,1,1,1.706.293L5.949,4.535A1,1,0,0,1,5.949,5.95Z' transform='translate(4.414 11.828) rotate(-135)')
+
+
+
+      .b-trends-button-next
+        svg(xmlns='http://www.w3.org/2000/svg' width='6.243' height='10.485' viewBox='0 0 6.243 10.485')
+          g(transform='translate(-35.769 195.453) rotate(-135)')
+            path.b-trends-button-path( d='M22.033,19.715,17.79,15.473a1,1,0,0,0-1.414,1.414l3.536,3.535-3.536,3.536a1,1,0,1,0,1.414,1.414l4.243-4.242A1,1,0,0,0,22.033,19.715Z' transform='translate(135.02 162.86) rotate(135)')
+
+      .b-trends-wrapper__body
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item.active( href="" ) Торт 1
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Торт 2
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Торт 3
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Торт 4
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+        a.b-trends__item( href="" ) Лазанья
+        a.b-trends__item( href="" ) Торт
+        a.b-trends__item( href="" ) Блины
+        a.b-trends__item( href="" ) Картофельная запеканка
+
+// end /components/trends/

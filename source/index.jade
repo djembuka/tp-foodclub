@@ -1,0 +1,40 @@
+﻿block vars
+  - var page = 'main'
+  - var authorized = false
+
+extends ./layouts/header.jade
+
+block title
+  title Main page | food
+  
+block content
+  
+  .container
+  
+    hr.i-size-L
+      
+    h2 Блоки
+    
+    ul
+      li
+        a( href="/blocks/yt-links/" ) Видео рецепты на YouTube
+      li
+        a( href="/blocks/trends/" ) Тренды (тэги)
+      
+    h2 Страницы
+    
+    ul
+      li
+        a( href="/pages/main/" ) Главная
+      li
+        a( href="/pages/recipes/" ) Рецепты
+      li
+        a( href="/pages/recipes/recipe/" ) Рецепт
+      li
+        a( href="/pages/search/result/" ) Результаты поиска
+      li
+        a( href="/pages/journal/" ) Журнал
+      li
+        a( href="/pages/journal/article/" ) Статья
+    
+    

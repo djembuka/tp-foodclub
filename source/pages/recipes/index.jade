@@ -1,0 +1,49 @@
+﻿block vars
+  - var page = 'recipes'
+  - var authorized = false
+
+extends ../../layouts/header.jade
+
+block title
+  title Recipes | food
+
+block content
+    
+  .container
+  
+    hr
+          
+    h1 Рецепты
+  
+  #content.all_recipes
+    
+    .container
+    
+      include ../../modules/content-nav/include.jade
+    
+      hr.i-size-M
+        
+      include ../../components/recipes.filter/template.jade
+      
+      include ../../components/recipes.filter/results.jade
+      
+      hr.i-size-L
+      
+      .b-recipe-line.b-ph-block
+      
+        -var heading = "Foodclub.ru рекомендует"
+        include ../../modules/heading-linethrough/include
+
+        hr.i-size-L
+        
+        .row
+          -var n = 0
+            while n < 3
+              -n++
+              .col-sm-4
+                include ../../modules/recipe-thumb/journal-item-short.jade
+              hr.i-size-L.visible-xs-block
+      
+      hr.i-size-L
+            
+            

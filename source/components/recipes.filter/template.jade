@@ -1,0 +1,53 @@
+﻿// start /components/recipes.filter/
+
+//- push style and script file to the end of the page
+if componentsArray
+  - componentsArray[ componentsArray.length ] = 'recipes.filter'
+else
+  - var componentsArray = [ 'recipes.filter' ]
+
+#filter_recipes.i-link( data-ajax-url="/json/all_recipes_result.html" ).b-ph-block
+
+  .b-ph
+    div
+    div
+    div
+    div
+
+  .b-filter-items__wrapper
+
+    .item.b-filter__item( data-type="cuisine" )
+      span.b-filter__item__heading.hidden-xs Кухня:
+      span.b-filter__item__button
+        span.hidden-xs Все
+        span.b-filter__icon.visible-xs
+          img( src="/template/images/icons/kitchen-type.svg" alt="" )
+          img.i-active( src="/template/images/icons/kitchen-type-act.svg" alt="" )
+              
+    .item.b-filter__item( data-type="dish" )
+      span.b-filter__item__heading.hidden-xs Тип блюда:
+      span.b-filter__item__button
+        span.hidden-xs Все
+        span.b-filter__icon.visible-xs
+          img( src="/template/images/icons/dish-type.svg" alt="" )
+          img.i-active( src="/template/images/icons/dish-type-act.svg" alt="" )
+              
+    .item.b-filter__item( data-type="ingredient" )
+      span.b-filter__item__heading.hidden-xs Основной ингредиент:
+      span.b-filter__item__button
+        span.hidden-xs Все
+        span.b-filter__icon.visible-xs
+          img( src="/template/images/icons/ingredients.svg" alt="" )
+          img.i-active( src="/template/images/icons/ingredients-act.svg" alt="" )
+              
+    .item.b-filter__item( data-type="tag" )
+      span.b-filter__item__heading.hidden-xs Метка:
+      span.b-filter__item__button
+        span.hidden-xs Все
+        span.b-filter__icon.visible-xs
+          img( src="/template/images/icons/tag.svg" alt="" )
+          img.i-active( src="/template/images/icons/tag-act.svg" alt="" )
+      
+  #filter_lists( data-load-url="/components/recipes.filter/load.html" )
+        
+// end /components/recipes.filter/

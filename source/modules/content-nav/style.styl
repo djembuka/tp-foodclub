@@ -1,0 +1,53 @@
+@import '../../styl/component-include.styl'
+
+.b-content-nav
+  font-size 10pt
+  text-align center
+  color #999
+  
+  &.i-ph-animated
+  
+    .b-ph
+      opacity 0
+      z-index -1
+      
+    a,
+    span
+      opacity 1
+  
+  .container
+  
+    @media( max-width $screen-tablet - 1 )
+      display none
+  
+  nav
+    margin 0
+    padding 0
+
+  a,
+  span
+    margin 0 17px
+    white-space nowrap
+
+    &.i-emphasise
+      color #389a0d
+      
+  @media( max-width $screen-tablet - 1 )
+    padding 0
+    
+    a,
+    span
+      display block
+      text-align center
+      margin-bottom 15px
+
+  .b-mobile-menu-icon
+    height 57px
+    background embedurl( 'img/menu-icon.gif' ) no-repeat center center
+    cursor pointer
+    
+  &.i-open
+    
+    .hidden-xs
+      display block !important
+      
